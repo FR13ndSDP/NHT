@@ -1,0 +1,34 @@
+# ------------ Geometry properties ---------------
+# Geometry Length
+L 0.3 
+# Number of nodes
+N 10 
+# Spatial (s)
+dt 60 
+# ------------ Physical properties ---------------
+# rho*c
+RHOC 1.05e6 
+# conductivity
+K 0.85 
+# ------------ Initial condition -----------------
+# left temperature
+TA 20 
+# right temperature
+TB -10 
+# ----------- Boundary condition -----------------
+# decide if it's steady or unsteady
+unSteady 1  
+# boudary condition 
+Boundary_L 3 
+Boundary_R 3 
+# heat flux if B.C 2 if choosen
+Q_L 0 
+Q_R 0 
+# wall h if B.C 3 is choosen
+A1 6 
+A2 35 
+# ----------- Linear solver ----------------------
+# solver used: TDMA, jacobi or guassSeidel
+solver TDMA 
+# precsion of iterative solver 
+P 1e-8 
