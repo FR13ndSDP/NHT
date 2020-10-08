@@ -68,7 +68,6 @@ Vec guassSeidel(Vec aW, Vec aP, Vec aE, Vec Su, double p)
             phi[i] = (aW[i]*phi[i-1]+aE[i]*phi0[i+1]+Su[i])/aP[i];
         }
         phi[n-1] = (aW[n-1]*phi[n-2]+Su[n-1])/aP[n-1];
-        for (int i=0; i<n; i++)
         for (int i =0; i<n; i++)
         {
             errList[i] = phi0[i] - phi[i];
