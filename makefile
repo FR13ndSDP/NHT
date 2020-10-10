@@ -6,7 +6,7 @@ obj = main.o Parameters.o Solver.o
 $(prom): $(obj)
 		   $(cc) -o $(prom) $(obj)
 
-%.o: %.C $(deps)
+%.o: %.cpp $(deps)
 	$(cc) -c $< -o $@
 
 clean:

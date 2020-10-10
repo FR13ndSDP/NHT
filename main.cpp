@@ -54,7 +54,7 @@ int main()
             Tw = (2*P.K/(P.L/P.N)*T[0]+P.A1*P.TA)/(P.A1+2*P.K/(P.L/P.N));
             cnt++;
         }
-        cout << "time = " << cnt*60 << " Tw = " << Tw << endl;
+        cout << "time = " << cnt*P.dt << " Tw = " << Tw << endl;
         P.outputFile(position, T);
     }
     else

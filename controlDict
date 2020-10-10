@@ -2,7 +2,7 @@
 # Geometry Length
 L 0.3 
 # Number of nodes
-N 10 
+N 64 
 # Spatial (s)
 dt 60 
 # ------------ Physical properties ---------------
