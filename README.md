@@ -57,3 +57,9 @@ solver TDMA
 P 1e-8 
 ```
 以上为默认参数，在`Parameters`类的构造函数中已经包含。
+
+## RESULT
+
+![Tw=14.5](result/t_1495.png)
+
+![multiple condition](result/multi_condition.png)
